@@ -13,6 +13,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var swoosh: UIImageView!
     @IBOutlet weak var bgImg: UIImageView!
     
+    @IBAction func unwindFromLeagueVC(unwindSegue: UIStoryboardSegue){
+        
+    }
+    
+    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue){
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
