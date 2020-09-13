@@ -8,8 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class WelcomeViewController: UIViewController {
+    
+    
+    // When deleting unnecessary IBOutlets like the ones below, make sure to delete the references in Main.storyboard as well.
     @IBOutlet weak var swoosh: UIImageView!
     @IBOutlet weak var bgImg: UIImageView!
     
@@ -17,9 +19,7 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue){
-        
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

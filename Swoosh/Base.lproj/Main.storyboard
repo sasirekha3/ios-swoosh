@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="137.5" y="137.6953125"/>
         </scene>
-        <!--View Controller-->
+        <!--League View Controller-->
         <scene sceneID="3Sh-Bl-bxj">
             <objects>
-                <viewController id="KEU-5x-xz5" sceneMemberID="viewController">
+                <viewController id="KEU-5x-xz5" customClass="LeagueViewController" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wb2-g6-LwI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -214,10 +214,10 @@
             </objects>
             <point key="canvasLocation" x="940.57971014492762" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Skill View Controller-->
         <scene sceneID="Qyx-GT-pdQ">
             <objects>
-                <viewController id="Nps-Gg-nbs" sceneMemberID="viewController">
+                <viewController id="Nps-Gg-nbs" customClass="SkillViewController" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Jf-9e-ii0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -297,7 +297,7 @@
                                 </constraints>
                                 <state key="normal" image="backButton"/>
                                 <connections>
-                                    <segue destination="eoT-LQ-v0a" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="myU-rm-Oj9"/>
+                                    <segue destination="eoT-LQ-v0a" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="FCK-Tg-RXt"/>
                                 </connections>
                             </button>
                         </subviews>
