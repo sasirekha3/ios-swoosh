@@ -53,6 +53,8 @@ class LeagueViewController: UIViewController {
         nextBtn.isEnabled = true
     }
     
+    
+    // What we need to pass data across segues is all in the comment below (auto-generated)
     /*
     // MARK: - Navigation
 
@@ -62,5 +64,16 @@ class LeagueViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // This is overriding the default prepare that was being used until we implemented this from the parent class
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // if the code after let fails, the if fails, but does not throw a runtime error
+        if let skillViewController = segue.destination as? SkillViewController {
+            // If the destination of the segue is SkillViewContoller,
+            // pass data in the player object from this VC to the next VC
+            skillViewController.player = player
+            // prepare-for-segue is ALWAYS guaranteed to be called before viewDidLoad in the next VC. So we can use the implicitly unwrapped optional with confidence because we will be assigning it a value. But it also means that from wherever the SkillViewController is segued to, a player object MUST be passed.
+        }
+    }
 
 }

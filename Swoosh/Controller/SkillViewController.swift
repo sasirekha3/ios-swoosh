@@ -9,11 +9,16 @@
 import UIKit
 
 class SkillViewController: UIViewController {
+    
+    var player: Player!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // force unwrapping here just for the sake of print. Best to use a guard-if-let
+        print(player.desiredLeague!)
     }
     
 
